@@ -1,0 +1,133 @@
+/* .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  box-shadow: 5px 0px 10px 1px lightgrey;
+  background-color: skyblue;
+  height: 80px;
+}
+
+.header__option {
+  padding-top: 15px;
+  height: 95px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header label {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.header select {
+  border: none;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: transparent;
+}
+
+.MuiSlider-track {
+  color: green;
+}
+
+.header__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .header__option {
+    padding: 10px;
+    margin-bottom: 10px;
+    height: auto;
+    border-bottom: none;
+  }
+
+  .header select {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .header label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+} */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  box-shadow: 5px 0px 10px 1px lightgrey;
+  background-color: skyblue;
+  height: 80px;
+}
+
+.header__option {
+  padding: 15px 0; /* Adjusted padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; /* Changed height for flexibility */
+}
+
+.header label {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 1rem; /* Ensured consistent font size */
+}
+
+.header select {
+  border: none;
+  font-size: 0.9rem;
+  outline: none;
+  background-color: transparent;
+}
+
+.MuiSlider-track {
+  color: green;
+}
+
+.header__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center; /* Center-align options */
+    height: auto; /* Adjusted height for flexibility */
+  }
+
+  .header__option {
+    padding: 10px 0; /* Adjusted padding */
+    margin-bottom: 10px;
+    border-bottom: none;
+    text-align: center; /* Centered text for better readability */
+  }
+
+  .header select {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .header label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+}
